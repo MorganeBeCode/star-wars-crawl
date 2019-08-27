@@ -4,7 +4,48 @@ body {
     overflow: hidden;
     background-image: url(https://assets3.thrillist.com/v1/image/2822472/size/tmg-article_main_wide_2x.jpg);
     background-size: contain;
+}
 
+.intro {
+    display: flex;
+    position: absolute;
+    top: 45%;
+    justify-content: center;
+    color: rgb(117, 180, 201);
+    font-size: 300%;
+    font-family: sans-serif;
+    height: 150px;
+    width: 100%;
+    transition: opacity 1.2s ease;
+    transition-delay: 4s;
+    opacity: 0;
+}
+
+.logo {
+    display: flex;
+    position: absolute;
+    top: 10%;
+    justify-content: center;
+    width: 100%;
+    z-index: 2;
+}
+
+.logo img {
+    width: 200%;
+    animation-name: logo;
+    animation-delay: 6s;
+    animation-duration: 6s;
+    animation-timing-function: ease-out;
+    opacity: 0;
+}
+
+@keyframes logo {
+    0%, 80% {
+        opacity: 1;
+    }
+    to {
+        transform: scale(0);
+    }
 }
 
 .title {
@@ -30,6 +71,7 @@ body {
     top: 9999px;
     transform-origin: 85% 15%;
     animation: crawl 60s linear;
+    animation-delay: 10s;
   }
 
 .fade {
