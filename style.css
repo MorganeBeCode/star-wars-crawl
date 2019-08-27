@@ -55,7 +55,9 @@ body {
 .star-wars {
     display: flex;
     justify-content: center;
-    height: 800px;
+    position: relative;
+    height: 270px;
+    width: 100%;
     perspective: 400px;
     color: #feda4a;
     font-family: 'Pathway Gothic One', sans-serif;
@@ -69,7 +71,7 @@ body {
 .crawl {
     position: relative;
     top: 9999px;
-    transform-origin: 85% 15%;
+    transform-origin: 50% 100%;
     animation: crawl 60s linear;
     animation-delay: 10s;
   }
@@ -90,6 +92,6 @@ body {
     }
     100% { 
       top: -6000px;
-      transform: rotateX(25deg) translateZ(-2500px);
+      transform: rotateX(30deg) translateZ(-2500px);
     }
   }
